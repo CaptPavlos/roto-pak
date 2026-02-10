@@ -20,7 +20,7 @@ const content = {
     banking: "Banking Details",
     bank: "Bank",
     iban: "IBAN",
-    swift: "SWIFT/BIC",
+    accountNumber: "Account Number",
     footer: "© 2026 Roto Pak. All rights reserved.",
   },
   el: {
@@ -40,31 +40,31 @@ const content = {
     banking: "Τραπεζικά Στοιχεία",
     bank: "Τράπεζα",
     iban: "IBAN",
-    swift: "SWIFT/BIC",
+    accountNumber: "Αριθμός Λογαριασμού",
     footer: "© 2026 Roto Pak. Με επιφύλαξη παντός δικαιώματος.",
   },
 };
 
-// Company data - UPDATE THESE WITH REAL INFO
+// Company data
 const companyData = {
-  name: "ROTO PAK",
+  name: "ROTOPACK IKE",
   activity: {
-    en: "Manufacture of plastic rolls & films for food packaging and industrial use",
-    el: "Παραγωγή πλαστικών ρολών & μεμβρανών για συσκευασία τροφίμων και βιομηχανική χρήση",
+    en: "Other Printing Services / Plastic Film Manufacturing",
+    el: "Άλλες Υπηρεσίες Εκτύπωσης / Παραγωγή Πλαστικών Φιλμ",
   },
-  legalForm: { en: "Sole Proprietorship", el: "Ατομική Επιχείρηση" },
-  vatNumber: "000000000", // Replace with real ΑΦΜ
-  taxOffice: { en: "Athens", el: "Αθηνών" }, // Replace with real ΔΟΥ
-  gemi: "000000000000", // Replace with real ΓΕΜΗ
+  legalForm: { en: "Private Company (IKE)", el: "Ιδιωτική Κεφαλαιουχική Εταιρεία (ΙΚΕ)" },
+  vatNumber: "802557426",
+  taxOffice: { en: "KEFODE ATTIKIS", el: "ΚΕΦΟΔΕ ΑΤΤΙΚΗΣ" },
+  gemi: "178566201000",
   address: {
-    en: "Address, City, Postal Code, Greece",
-    el: "Διεύθυνση, Πόλη, Τ.Κ., Ελλάδα",
+    en: "22 Pergamou Street, Egaleo 12242, Greece",
+    el: "Οδός Περγάμου 22, Αιγάλεω 12242, Ελλάδα",
   },
-  phone: "+30 210 000 0000", // Replace with real phone
-  email: "info@rotopak.gr", // Replace with real email
-  bank: { en: "Bank Name", el: "Όνομα Τράπεζας" },
-  iban: "GR00 0000 0000 0000 0000 0000 000", // Replace with real IBAN
-  swift: "XXXXGRAA", // Replace with real SWIFT
+  phone: "+30 694 422 3193",
+  email: "info@rotopack.gr",
+  bank: { en: "National Bank of Greece", el: "Εθνική Τράπεζα της Ελλάδος" },
+  iban: "GR73 0110 0910 0000 0910 1750 991",
+  accountNumber: "09101750991",
 };
 
 export default function Home() {
@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <div className="container">
       <header className="header">
-        <h1 className="logo">ROTO PAK</h1>
+        <h1 className="logo">ROTOPACK</h1>
         <p className="tagline">{t.tagline}</p>
         <p style={{ marginTop: "12px", color: "#a0aec0", fontSize: "0.95rem", maxWidth: "500px", marginLeft: "auto", marginRight: "auto" }}>
           {t.description}
@@ -155,8 +155,8 @@ export default function Home() {
           <span className="info-value">{companyData.iban}</span>
         </div>
         <div className="info-row">
-          <span className="info-label">{t.swift}</span>
-          <span className="info-value">{companyData.swift}</span>
+          <span className="info-label">{t.accountNumber}</span>
+          <span className="info-value">{companyData.accountNumber}</span>
         </div>
       </div>
 
