@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
+import { Roboto } from "next/font/google";
 import "./globals.css";
+
+const roboto = Roboto({
+  weight: ["400", "500", "700"],
+  subsets: ["latin", "greek"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "ROTOPACK IKE | Plastic Film & Roll Manufacturing",
-  description: "ROTOPACK IKE - Manufacturer of plastic rolls and films for food packaging, cooking, and industrial applications. Παραγωγή πλαστικών ρολών και μεμβρανών. Αιγάλεω, Ελλάδα.",
+  description: "ROTOPACK IKE - Manufacturer of plastic rolls and films for food packaging, cooking, and industrial applications. Παραγωγη πλαστικων ρολων και μεμβρανων. Αιγαλεω, Ελλαδα.",
 };
 
 export default function RootLayout({
@@ -13,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
