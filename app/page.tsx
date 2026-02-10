@@ -4,9 +4,11 @@ import { useState } from "react";
 
 const content = {
   en: {
-    tagline: "Company Information",
+    tagline: "Plastic Film & Roll Manufacturing",
+    description: "Manufacturer of plastic rolls and films for food packaging, cooking, and industrial applications.",
     companyInfo: "Company Information",
     companyName: "Company Name",
+    activity: "Business Activity",
     legalForm: "Legal Form",
     vatNumber: "VAT Number (ΑΦΜ)",
     taxOffice: "Tax Office",
@@ -22,9 +24,11 @@ const content = {
     footer: "© 2026 Roto Pak. All rights reserved.",
   },
   el: {
-    tagline: "Στοιχεία Εταιρείας",
+    tagline: "Παραγωγή Πλαστικών Φιλμ & Ρολών",
+    description: "Παραγωγή πλαστικών ρολών και μεμβρανών για συσκευασία τροφίμων, μαγειρική και βιομηχανικές εφαρμογές.",
     companyInfo: "Στοιχεία Εταιρείας",
     companyName: "Επωνυμία",
+    activity: "Δραστηριότητα",
     legalForm: "Νομική Μορφή",
     vatNumber: "ΑΦΜ",
     taxOffice: "ΔΟΥ",
@@ -44,6 +48,10 @@ const content = {
 // Company data - UPDATE THESE WITH REAL INFO
 const companyData = {
   name: "ROTO PAK",
+  activity: {
+    en: "Manufacture of plastic rolls & films for food packaging and industrial use",
+    el: "Παραγωγή πλαστικών ρολών & μεμβρανών για συσκευασία τροφίμων και βιομηχανική χρήση",
+  },
   legalForm: { en: "Sole Proprietorship", el: "Ατομική Επιχείρηση" },
   vatNumber: "000000000", // Replace with real ΑΦΜ
   taxOffice: { en: "Athens", el: "Αθηνών" }, // Replace with real ΔΟΥ
@@ -68,6 +76,9 @@ export default function Home() {
       <header className="header">
         <h1 className="logo">ROTO PAK</h1>
         <p className="tagline">{t.tagline}</p>
+        <p style={{ marginTop: "12px", color: "#a0aec0", fontSize: "0.95rem", maxWidth: "500px", marginLeft: "auto", marginRight: "auto" }}>
+          {t.description}
+        </p>
       </header>
 
       <div className="lang-toggle">
@@ -90,6 +101,10 @@ export default function Home() {
         <div className="info-row">
           <span className="info-label">{t.companyName}</span>
           <span className="info-value">{companyData.name}</span>
+        </div>
+        <div className="info-row">
+          <span className="info-label">{t.activity}</span>
+          <span className="info-value">{companyData.activity[lang]}</span>
         </div>
         <div className="info-row">
           <span className="info-label">{t.legalForm}</span>
