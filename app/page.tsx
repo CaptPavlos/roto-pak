@@ -25,7 +25,7 @@ const content = {
   },
   el: {
     tagline: "Παραγωγη Πλαστικων Φιλμ & Ρολων",
-    description: "Παραγωγή πλαστικών ρολών και μεμβρανών για συσκευασία τροφίμων, μαγειρική και βιομηχανικές εφαρμογές.",
+    description: "Παραγωγη πλαστικων ρολων και μεμβρανων για συσκευασια τροφιμων, μαγειρικη και βιομηχανικες εφαρμογες.",
     companyInfo: "Στοιχεια Εταιρειας",
     companyName: "Επωνυμια",
     activity: "Δραστηριοτητα",
@@ -50,19 +50,19 @@ const companyData = {
   name: "ROTOPACK IKE",
   activity: {
     en: "Other Printing Services / Plastic Film Manufacturing",
-    el: "Άλλες Υπηρεσίες Εκτύπωσης / Παραγωγή Πλαστικών Φιλμ",
+    el: "Αλλες Υπηρεσιες Εκτυπωσης / Παραγωγη Πλαστικων Φιλμ",
   },
-  legalForm: { en: "Private Company (IKE)", el: "Ιδιωτική Κεφαλαιουχική Εταιρεία (ΙΚΕ)" },
+  legalForm: { en: "Private Company (IKE)", el: "Ιδιωτικη Κεφαλαιουχικη Εταιρεια (ΙΚΕ)" },
   vatNumber: "802557426",
   taxOffice: { en: "KEFODE ATTIKIS", el: "ΚΕΦΟΔΕ ΑΤΤΙΚΗΣ" },
   gemi: "178566201000",
   address: {
     en: "22 Pergamou Street, Egaleo 12242, Greece",
-    el: "Οδός Περγάμου 22, Αιγάλεω 12242, Ελλάδα",
+    el: "Οδος Περγαμου 22, Αιγαλεω 12242, Ελλαδα",
   },
   phone: "+30 694 422 3193",
-  email: "info@rotopack.gr",
-  bank: { en: "National Bank of Greece", el: "Εθνική Τράπεζα της Ελλάδος" },
+  email: "stamnik@yahoo.com",
+  bank: { en: "National Bank of Greece", el: "Εθνικη Τραπεζα της Ελλαδος" },
   iban: "GR73 0110 0910 0000 0910 1750 991",
   accountNumber: "09101750991",
 };
